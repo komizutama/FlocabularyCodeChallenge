@@ -2,8 +2,7 @@
 F.E. Code Assignment
 
 I want to take a moment and thank you for this code challenge. I honestly had a lot of fun figuring this out. 
-This of course feels extremely validating in terms of continuing to work on these kinds of projects. So, whether you want to bring me in for subsequent interviews, or not. 
-Thank you!!!
+This of course feels extremely validating in terms of continuing to work on these kinds of projects. So, thank you!!!
 
 <h4>Things I did for the first time:</h4>
 <ol>
@@ -28,6 +27,7 @@ Thank you!!!
 <li>Figuring out why Less.css and Adobe typekit were not working with F:///...</li>
 <li>I missed an "s" in the declaring the "class" for one of the breadcrumb nav items read and reread it for an obscene amount of time before I caught it.</li>
 </ol>
-So there it is... This is definitely the most in depth F.E. type project that I've tackled and it's made me pretty stoked to work on more. 
-Thank you! :-)
+So there it is... This is definitely the most in depth F.E. type project that I've tackled, and it's made me pretty stoked to work on more. </br>
+Thank you! :-)</br>
+
 Matthias
