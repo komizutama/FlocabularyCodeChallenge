@@ -1,31 +1,17 @@
 // Text Colors
 @color-text: #181828; 
 @color-text-light: #979799;
-@color-active: #018ED5;
-@color-disabled:#D3D3D3;
 
 //Utility Colors
 @color-border: #E6E6E6;
-@color-border-dark: #222222;
 @color-border-light: #EEEEEE;
-@color-goodGreen: #55A003;
-@color-badRed: #DD2D18;
-@color-favoriteYellow: #FFC53B;
 @color-sign-in-hover: fade(@color-flocab-blue, 50%);
 
 //Background Colors
 @color-depth1-background: #FFFFFF;
-@color-depth2-background: #F2F2F2;
-@color-depth3-background: #E6E6E6;
-@color-depth4-background: #181828;
 
 //Flocab Brand Colors
-@color-flocab-orange: #F65412;
-@color-flocab-green: #55A003;
 @color-flocab-blue: #018ED5;
-@color-flocab-purple: #6C4B84;
-@color-flocab-darkBase: #181828;
-@color-flocab-darkBase-grey: #52525E;
 
 //subject color
 @color-subject-languageArts: #579E1B;
@@ -37,14 +23,12 @@
 @width-fullPage: @g*128; //(1024px)
 @width-contentArea: @g*99; 
 @width-sidebar: @g*26; 
-@layout-bodyMainHeight: @g*97; //(776px)
 
 //Font Sizes:
 @base: 18px;
 @title: 37px;
 @small: 16px;
 @large: 24px;
-
 
 //mix-ins
 .border-radius (@radius: 3px) {
@@ -53,7 +37,10 @@
 	border-radius: @radius;
 }
 
-
+a{ 
+    color: inherit; 
+    text-decoration:none;
+    } 
 
 html, body {
     margin:0;
@@ -246,7 +233,6 @@ html, body {
 }
 
 .breadcrumb a{
-    text-decoration: none;
     color: @color-depth1-background;
     opacity: 0.5;
     filter: alpha(opacity=50);
@@ -314,7 +300,7 @@ html, body {
     padding: @g 0 @g @g*3;
 }
 .menu-item:hover{
-    background-color: @color-text-light;
+    background-color:@color-border;
 }
 .menu img{
     display: inline-block;
@@ -342,15 +328,7 @@ div.video-player{
     height: @g-block;
     .border-radius();
 }
-/*
-.video-player img{
-    display:inline-block;
-    position: relative;
-    height: 32;
-    width: 792;
-    vertical-align: middle;
-}
-*/
+
 
 //lyrics
 .lyric-wrapper{
@@ -416,6 +394,26 @@ div.video-player{
     font-style:italic;
 }
 
-.thumb-body {
+.thumb-body{
     line-height: 150%;
 }
+
+.expand-overlay{
+    position:absolute;
+    width:@g*128%;
+    height:auto;
+    top:0;
+    left:0;
+}
+
+.disappear{
+    display:none;
+}
+
+.wiggle:hover{
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+
+
