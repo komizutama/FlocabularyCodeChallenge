@@ -168,7 +168,9 @@ body {
   zoom: 1;
 }
 .breadcrumb a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
@@ -210,7 +212,7 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #E6E6E6;
+  background-color: #EEEEEE;
   display: inline-block;
   margin: 0 16px 0 0;
 }
@@ -220,6 +222,7 @@ body {
 .menu-item {
   display: block;
   padding: 8px 0 8px 24px;
+  background-color: none;
 }
 .menu-item:hover {
   background-color: #E6E6E6;
@@ -232,7 +235,7 @@ body {
 }
 .menu .top,
 .middle {
-  border-style: none none groove none;
+  border-bottom: groove;
 }
 .content-wrapper {
   width: 792px;
@@ -312,8 +315,19 @@ div.video-player {
   display: none;
 }
 .wiggle:hover {
-  -webkit-animation: pulse 1s;
-  animation: pulse 1s;
+  -webkit-animation: pulse 0.25s;
+  animation: pulse 0.25s;
+}
+.lyrics a {
+  color: #018ED5;
+  border-bottom: 2px solid rgba(15, 121, 203, 0.3);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.lyrics a:hover {
+  color: #FFFFFF;
+  background-color: #018ED5;
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
