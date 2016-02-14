@@ -1,9 +1,11 @@
 // Text Colors
 @color-text: #181828; 
 @color-text-light: #979799;
+@color-active: #018ED5;
 
 //Utility Colors
 @color-border: #E6E6E6;
+@color-border-dark: #222222;
 @color-border-light: #EEEEEE;
 @color-sign-in-hover: fade(@color-flocab-blue, 50%);
 
@@ -240,13 +242,14 @@ html, body {
 }
 
 .breadcrumb a:hover{
-    text-decoration: underline;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
     opacity:0.8;
     filter:alpha(opacity=80);
     zoom:1;
     
 }
-
 
 .breadcrumb-arrow{
     margin-left:@g;
@@ -287,7 +290,7 @@ html, body {
 .menu{
     width:@width-sidebar;
     .border-radius();
-    background-color: @color-border;
+    background-color: @color-border-light;
     display: inline-block;
     margin:0 @g*2 0 0;
 }
@@ -298,6 +301,7 @@ html, body {
 .menu-item{
     display: block;
     padding: @g 0 @g @g*3;
+    background-color:none;
 }
 .menu-item:hover{
     background-color:@color-border;
@@ -309,7 +313,7 @@ html, body {
     padding-right:@g;
 }
 .menu .top, .middle{
-    border-style: none none groove none;
+    border-bottom: groove;
 }
 
 
@@ -411,9 +415,21 @@ div.video-player{
 }
 
 .wiggle:hover{
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
+    -webkit-animation: pulse 0.25s;
+    animation: pulse 0.25s;
 }
 
+.lyrics a{
+    color: @color-active;
+    border-bottom: 2px solid rgba(15,121,203,0.3);
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+}
+.lyrics a:hover{
+    color: @color-depth1-background;
+    background-color:@color-active;
+    border-bottom: none;
+}
+    
 
 
